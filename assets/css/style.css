@@ -241,8 +241,62 @@ nav{
 }
 
 .featured-text-btn>.blue-btn:hover{
+    background: var(--first-color-hover);
     
 }
+
+.social_icons{
+    display: flex;
+    margin-top: 5em;
+    gap: 30px;
+}
+
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+}
+
+.icon:hover{
+    color: var(--first-color);
+
+}
+
+.featured-image{
+    display: flex;
+    justify-content: right;
+}
+
+.image{
+    margin: auto 0;
+    width: 380px;
+    border-radius: 55% 45% 55% 45%;
+    overflow: hidden;
+    animation: imgFloat 7s ease-in-out infinite;
+}
+
+.image img{
+    width: 380px;
+    height: 420px;
+    object-fit: cover;
+}
+
+@keyframes imgFloat {
+    50%{
+        transform: translateY(10px);
+        transform: translateX(5px);
+        
+        border-radius: 45% 55%;
+    }
+    
+}
+
+
 
 /*----------- FEATURED IMAGE BOX -------------*/
 
