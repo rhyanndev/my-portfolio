@@ -113,9 +113,9 @@
                 </div>
 
                 <div class="social_icons">
-                    <div class="icon"><a href="https://www.linkedin.com/in/rhyannsilva/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></div>
-                    <div class="icon"><a href="https://github.com/rhyanndev" target="_blank"><i class="fa-brands fa-github"></i></a></div>
-                    <div class="icon"><a href="mailto:rhyannjb@hotmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a></div>
+                <a href="https://www.linkedin.com/in/rhyannsilva/" target="_blank" class="icon"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/rhyanndev" target="_blank" class="icon"><i class="fa-brands fa-github"></i></a>
+                <a href="mailto:rhyannjb@hotmail.com" target="_blank" class="icon"><i class="fa-solid fa-envelope"></i></a>
                 </div>
             </div>
 
@@ -143,7 +143,7 @@
                 <div class="col">
                     <div class="about-info">
                         <h3>Um pouco sobre mim</h3>
-                        <p>Estudante de desenvolvimento web, com experiência em redes de computadores, adoro filmes, documentários e ler livros nas horas vagas</p>
+                        <p>Estudante de desenvolvimento web, com experiência em redes de computadores, adoro filmes, documentários e ler livros nas horas vagas.</p>
                         <div class="about-btn">
                             
                                 
@@ -268,19 +268,31 @@
 
                 <div class="col">
                     <div class="form-control">
-                        <div class="form-inputs">
-                            <input type="text" class="input-field" placeholder="Nome">
-                            <input type="text" class="input-field" placeholder="Email">
-                        </div>
 
-                        <div class="text-area">
-                            <textarea placeholder="Messagem"></textarea>
-                        </div>
-                        <div class="form-button">
-                            <button class="btn">
-                                Send <i class="fa-solid fa-paper-plane"></i>
-                            </button>
-                        </div>
+                        <form action="https://formsubmit.co/rhyannjb@hotmail.com" method="POST" id="form-info">
+
+                            <div class="form-inputs">
+                                <input type="text" name="Nome"  class="input-field" placeholder="Digite seu nome" required>
+                                <input type="text" name="Email" class="input-field" placeholder="Digite seu email" required>
+                            </div>
+            
+                            <div class="text-area">
+                                <textarea cols="30" rows="10" name="Messagem" placeholder="Digite a sua messagem" required></textarea>
+                            </div>
+
+                            <input type="hidden" name="_subject" value="Alguém entrou em contato com você através do portfólio!">
+                            <input type="text" name="_honey" style="display: none">
+                            <input type="hidden" name="_captcha" value="false">
+
+                            <input type="hidden" name="_next" value="http://127.0.0.1:5500/thanks.html">
+
+
+                            <div class="form-button">
+                                <button class="btn" type="submit" >
+                                    Enviar <i class="fa-solid fa-paper-plane"></i>
+                                </button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -318,9 +330,9 @@
         </div>
 
         <div class="footer-social-icons">   
-            <div class="icon"><a href="https://www.linkedin.com/in/rhyannsilva/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></div>
-            <div class="icon"><a href="https://github.com/rhyanndev" target="_blank"><i class="fa-brands fa-github"></i></a></div>
-            <div class="icon"><a href="mailto:rhyannjb@hotmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a></div>
+            <a href="https://www.linkedin.com/in/rhyannsilva/" target="_blank" class="icon"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/rhyanndev" target="_blank" class="icon"><i class="fa-brands fa-github"></i></a>
+            <a href="mailto:rhyannjb@hotmail.com" target="_blank" class="icon"><i class="fa-solid fa-envelope"></i></a>
 
         </div>
     </footer>
@@ -336,4 +348,5 @@
 </body>
 <!-- MAIN JS -->
 <script src="assets/js/main.js" async></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </html>

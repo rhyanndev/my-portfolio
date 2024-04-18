@@ -108,11 +108,23 @@ if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
 window.addEventListener('scroll', scrollActive)
 
 
-function downloadFile(url) {
-    var link = document.createElement('a');
-    link.href = url;
-    link.setAttribute('download', '');
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-}
+// document.getElementById('form-info').addEventListener('submit', function(event) {
+//     event.preventDefault(); // Impede o envio padrão do formulário
+
+//     // Obtém os dados do formulário
+//     const formData = new FormData(this);
+//     console.log(formData);
+//     // Envia os dados do formulário
+//     axios.post(this.action, formData)
+//         .then(function(response) {
+//             // Limpa os campos apenas se a mensagem for enviada com sucesso
+//             document.getElementsByName('Nome')[0].value = '';
+//             document.getElementsByName('Email')[0].value = '';
+//             document.getElementsByName('Messagem')[0].value = '';
+
+//         })
+//         .catch(function(error) {
+//             // Trata os erros, se houver
+//             alert('Erro ao enviar formulário:', error);
+//         });
+// });

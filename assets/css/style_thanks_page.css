@@ -1,0 +1,342 @@
+/*------------ POPPINS FONT LINK ------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+/* ---------- VARIABLES ---------*/
+
+:root {
+
+    --body-color: #1c0e5f;
+    --color-white: rgb(255, 255, 255);
+
+    --text-color-second: rgb(68, 68, 68);
+    --text-color-third: rgb(30, 159, 171);
+
+    --first-color: rgb(110, 87, 224);
+    --first-color-hover: rgb(40, 91, 212);
+
+    --second-color: rgb(14, 8, 67) ;
+    --third-color: rgb(192, 166, 49);
+    --first-shadow-color: rgba(0, 0, 0, 0.1);
+
+
+}
+
+/*--------- BASE -------*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+/*---------- GLOBAL ICONS DESIGN ---------*/
+
+i{
+    font-size: 16px;
+}
+
+body{
+    background-image: linear-gradient(  45deg , #381eaa, #2a1788, #1c0f65, blue );
+   
+    background-size: 100% 100vh; 
+    
+}
+
+.container{
+    width: 100%;
+    position: relative;
+}
+/*------------ wrapper DESIGN --------------*/
+
+.wrapper{
+  padding-inline: 10vw ;
+    
+}
+
+/*------------------ FEATURED BOX -------------------*/
+
+.featured-box{
+    position: relative;
+    display: flex;
+    height: 100vh;
+    min-height: 700px;
+}
+
+
+
+/*----------- FEATURED BOX ----------- */
+
+.featured-text{
+   align-items: center;
+}
+
+
+/*----------------- FEATURED TEXT BOX ----------*/
+
+.featured-text-card span {
+    background: var(--third-color);
+    color: var(--color-white);
+    padding: 3px 8px;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+.featured-name{
+    font-size: 50px;
+    font-weight: 600;
+    color: var(--text-color-second);
+    margin-block: 20px;
+}
+
+.typedText {
+    text-transform: capitalize;
+    color: var(--color-white);
+}
+
+.featured-text-info{
+    text-align: center;
+    font-size: 15px;
+    color: var(--color-white);
+}
+
+.featured-text-btn{
+    display: flex;
+    gap: 20px;
+}
+
+.featured-text-btn>.blue-btn{
+    background: var(--first-color);
+    color:var(--color-white);
+}
+
+.featured-text-btn>.blue-btn:hover{
+    background: var(--first-color-hover);
+    
+}
+
+.social_icons{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--color-white);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+
+.icon a{
+    color: var(--color-white)
+    
+}
+
+.icon:hover{
+    color: var(--color-white);
+    background: var(--body-color);
+
+}
+
+.featured-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image{
+    margin: auto 0;
+    width: 380px;
+    border-radius: 55% 45% 55% 45%;
+    overflow: hidden;
+    animation: imgFloat 7s ease-in-out infinite;
+}
+
+.image img{
+    width: 380px;
+    height: 420px;
+    object-fit: cover;
+}
+
+@keyframes imgFloat {
+    50%{
+        transform: translateY(10px);
+        transform: translateX(5px);
+        
+        border-radius: 45% 55%;
+    }
+    
+}
+
+/* -- ## ----  RESUABLE CSS -- ## -- */
+
+
+h3{
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--color-white);
+    margin-bottom: 15px;
+}
+
+
+/*----------- MEDIA QUERY == 1024px / RESPONSIVE -------------*/
+
+@media only screen and (max-width: 1024px){
+
+    .featured-text{
+        padding: 0;
+    }
+    .image, .image img{
+        width: 320px;
+        height: 320px;
+    }
+
+}
+
+
+/*----------- MEDIA QUERY == 900px / RESPONSIVE -------------*/
+
+@media only screen and (max-width: 900px) {
+
+
+    /*botão de download de CV desaparece*/
+    .nav-button{
+        display: none;
+    }
+
+    /*botão de 3 barras aparece*/
+    .nav-menu.responsive{
+        left: 0;
+    }
+
+    .nav-menu{
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: rgba(105, 15, 190, 0.7);
+        backdrop-filter: blur(20px);
+        width: 100%;
+        min-height: 450px;
+        height: 90vh;
+        transition: .3s;
+        
+    }
+
+
+    .nav_menu_list{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-menu-btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .featured-box{
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    .featured-text{
+        width: 100%;
+        order: 2;
+        justify-content: center;
+        align-content: flex-start;
+        min-height: 60vh;
+    }
+
+    .social_icons {
+        margin-top: 2em;
+    }
+    .featured-image{
+        order: 1;
+        justify-content: center;
+        min-height: 150px;
+        width: 100%;
+        margin-top: 65px;
+    }
+
+    .image, .image img{
+        width: 150px;
+        height: 150px;
+    }
+
+    .row{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 50px;
+    }
+    .col{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .about-info, .contact-info{
+        width: 100%;
+    }
+    .project-container{
+        justify-content: center;
+
+    }
+    .project-box{
+        width: 80%;
+    }
+
+}
+
+/*----------- MEDIA QUERY == 540px / RESPONSIVE -------------*/
+
+@media only screen and (max-width: 540px){
+    .featured-name{
+        font-size: 40px;
+    }
+
+    .project-box{
+        width: 100%;
+    }
+
+    .form-inputs{
+        flex-direction: column;
+    }
+
+    .input-field{
+        width: 100%;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

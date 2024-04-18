@@ -278,17 +278,12 @@ nav{
     background: var(--color-white);
     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.7);
     cursor: pointer;
+    text-decoration: none;
+    color: var(--body-color);
 }
-
-
-.icon a{
-    color: var(--body-color)
-}
-
-.icon a:hover{
-    color: var(--second-color);
-    background: transparent;
-
+a:hover{
+    background-color: var(--body-color);
+    color: var(--color-white);
 }
 
 .featured-image{
@@ -615,6 +610,7 @@ h3{
     display: flex;
     gap: 10px;
     width: 100%;
+    margin-bottom: 10px;
 }
 
 .input-field{
@@ -702,6 +698,13 @@ footer{
 .footer-social-icons{
     display: flex;
     gap: 30px;
+    
+}
+
+.footer-social-icons .icon{
+    background-color: var(--body-color);
+    color: white;
+    text-decoration: none;
 }
 
 .bottom-footer{
