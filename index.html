@@ -34,7 +34,6 @@
 
         <div class="nav-logo">
             <p class="nav-name">Rhyann</p>
-            <span>.</span>
         </div>
 
         <div class="nav-menu" id="myNavMenu">
@@ -42,30 +41,32 @@
             <ul class="nav_menu_list">
 
                 <li class="nav_list">
-                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#home" class="nav-link">Início</a>
                     <div class="circle"></div>
                 </li>
 
                 <li class="nav_list">
-                    <a href="#about" class="nav-link">About</a>
+                    <a href="#about" class="nav-link">Sobre</a>
                     <div class="circle"></div>
                 </li>
 
                 <li class="nav_list">
-                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#projects" class="nav-link">Projetos</a>
                     <div class="circle"></div>
                 </li>
 
                 <li class="nav_list">
-                    <a href="#contact" class="nav-link">Contact</a>
+                    <a href="#contact" class="nav-link">Contato</a>
                     <div class="circle"></div>
                 </li>
 
             </ul>
         </div>
 
+        <a href="/assets/file/Currículo Rhyann Silva 2024.1.pdf" download></a>
+
         <div class="nav-button">
-            <button class="btn"> Download CV <i class="fa-solid fa-file"></i> </button>
+            <button class="btn"><a href="/assets/file/Currículo Rhyann Silva 2024.1.pdf" download>Download CV</a><i class="fa-solid fa-file"></i> </button>
         </div>
 
         <div class="nav-menu-btn">
@@ -83,6 +84,9 @@
 
 
     <main class="wrapper">
+
+        <!----------------        FEATURED BOX         ------------------>
+
         <section class="featured-box" id="home">
 
             <div class="featured-text">
@@ -91,24 +95,24 @@
                 </div>
 
                 <div class="featured-name">
-                    <p>I'm <span class="typedText">Web Developer</span></p>
+                    <p><span class="typedText"></span></p>
                 </div>
 
                 <div class="featured-text-info">
-                    <p>Experienced frontend developer with a passion for creating visually stunning and user-friendly websites</p>
+                    <p>Olá, tudo bem? Bem-vindo ao meu portfólio, onde você encontrará os meus projetos e um pouco sobre mim!</p>
                 </div>
 
                 <div class="featured-text-btn">
-                    <button class="btn blue-btn">Hire Me</button>
-                    <button class="btn">Download CV <i class="fa-solid fa-file"></i>  </button>
+                    <button class="btn blue-btn">Contrate-me</button>
+                    <button class="btn"><a href="/assets/file/Currículo Rhyann Silva 2024.1.pdf" download>Download CV</a><i class="fa-solid fa-file"></i>  </button>
 
 
                 </div>
 
                 <div class="social_icons">
-                    <div class="icon"><i class="fa-brands fa-linkedin"></i></div>
-                    <div class="icon"><i class="fa-brands fa-github"></i></div>
-                    <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                    <div class="icon"><a href="https://www.linkedin.com/in/rhyannsilva/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></div>
+                    <div class="icon"><a href="https://github.com/rhyanndev" target="_blank"><i class="fa-brands fa-github"></i></a></div>
+                    <div class="icon"><a href="mailto:rhyannjb@hotmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a></div>
                 </div>
             </div>
 
@@ -117,8 +121,142 @@
                     <img src="assets/images/image-profile.png" alt="">
                 </div>
             </div>
+            <div class="scroll-icon-box">
+                <a href="#about" class="scroll-btn">
+                    <i class="fa-solid fa-computer-mouse"></i>
+                    <p>Rolar para baixo</p>
+                </a>
+            </div>
 
         </section>
+
+<!----------------        ABOUT BOX     ------------------>
+
+        <section class="section" id="about">
+            <div class="top-header">
+                <h1>Sobre</h1>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="about-info">
+                        <h3>Um pouco sobre mim</h3>
+                        <p>Estudante de desenvolvimento web, com experiência em redes de computadores, adoro filmes, documentários e ler livros nas horas vagas</p>
+                        <div class="about-btn">
+                            
+                                <button class="btn"><a href="/assets/file/Currículo Rhyann Silva 2024.1.pdf" download><i class="fa-solid fa-file-import"></i> Download CV</a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+
+                    <div class="skills-box">
+                            <div class="skills-header">
+                                    <h3>Frontend</h3>
+                                </div>
+                                    <div class="skills-list">
+                                        <span>HTML</span>
+                                        <span>CSS</span>
+                                        <span>Bootstrap</span>
+                                        <span>JavaScript</span>
+                                        <span>TypeScript</span>
+                                </div>
+                            
+                    </div>
+
+                    <div class="skills-box">
+                        <div class="skills-header">
+                                <h3>Backend</h3>
+                            </div>
+                                <div class="skills-list">
+                                    <span>Java</span>
+                                    <span>C#</span> 
+                                    <span>Nodejs</span>
+                            </div>       
+                    </div>
+
+                    <div class="skills-box">
+                        <div class="skills-header">
+                                <h3>Database</h3>
+                            </div>
+                                <div class="skills-list">
+                                    <span>MySQL</span>
+                                    <span>SQL Server</span>
+                                </div>
+                     </div>
+            </div>
+        </section>
+
+
+        <!----------------------- PROJECT BOX ------------------------------->
+
+        <section class="section" id="projects">
+            <div class="top-header">
+                <h1>Projetos</h1>
+            </div>
+
+            <div class="project-container">
+                <div class="project-box">
+                    
+                    <h3>NoHungry</h3>
+                    <label>Site desenvolvido com as tecnologias HTML,
+                        CSS, Bootstrap, Java e PostgreSQL com o intuito de atender as demandas de um delivery.
+                        </label>
+                </div>
+
+                <div class="project-box">
+                    
+                    <h3>Sistema de Controle de Vendas</h3>
+                    <label>Realizado utilizando Java, JDBC, Interface Gráfica Swing e MySQL</label>
+                </div>
+
+                <div class="project-box">
+                    
+                    <h3>Aplicação Web de Previsão do Tempo</h3>
+                    <label>Aplicação Web para verificar temperatura em graus celsius, humidade e velocidade do vento de localidades com a utilização da API da OpenWeather</label>
+                </div>
+
+                
+            </div>
+        </section>
+
+        
+
+        <!----------------------- CONTACT BOX ------------------------------->
+
+        <section class="section" id="contact">
+            <div class="top-header">
+                <h1>Entre em contato</h1>
+                <span>Se o meu perfil fez sentido para o que você procura</span>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="contact-info">
+                        <h2>Me encontre em <i class="fa-solid fa-arrow-down"></i> </h2>
+                        <p><i class="fa-regular fa-envelope"></i> Email: rhyannjb@hotmail.com </p>
+                        
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="form-control">
+                        <div class="form-inputs">
+                            <input type="text" class="input-field" placeholder="Nome">
+                            <input type="text" class="input-field" placeholder="Email">
+                        </div>
+
+                        <div class="text-area">
+                            <textarea placeholder="Messagem"></textarea>
+                        </div>
+                        <div class="form-button">
+                            <button class="btn">
+                                Send <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
 
@@ -126,6 +264,38 @@
 
     <!------------------------- FOOTER ------------------------------->
 
+    <footer>
+        <div class="top-footer">
+            <p>Rhyann Silva</p>
+        </div>
+        <div class="middle-footer">
+            <u class="footer-menu">
+                <li class="footer_menu_list">
+                    <a href="#home">Início</a>
+                </li>
+
+                <li class="footer_menu_list">
+                    <a href="#about">Sobre</a>
+                </li>
+
+                <li class="footer_menu_list">
+                    <a href="#projects">Projetos</a>
+                </li>
+
+                <li class="footer_menu_list">
+                    <a href="#contact">Contato</a>
+                </li>
+            </u>
+        </div>
+
+        <div class="footer-social-icons">
+
+            <div class="icon"><i class="fa-brands fa-linkedin"></i></div>
+            <div class="icon"><i class="fa-brands fa-github"></i></div>
+            <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+
+        </div>
+    </footer>
 
     </div>
     <!-- TYPING JS LINK -->
