@@ -79,45 +79,10 @@ body{
 
 /*----------------- FEATURED TEXT BOX ----------*/
 
-.featured-text-card span {
-    background: var(--third-color);
-    color: var(--color-white);
-    padding: 3px 8px;
-    font-size: 12px;
-    border-radius: 5px;
-}
-
-.featured-name{
-    font-size: 50px;
-    font-weight: 600;
-    color: var(--text-color-second);
-    margin-block: 20px;
-}
-
-.typedText {
-    text-transform: capitalize;
-    color: var(--color-white);
-}
-
 .featured-text-info{
     text-align: center;
     font-size: 15px;
     color: var(--color-white);
-}
-
-.featured-text-btn{
-    display: flex;
-    gap: 20px;
-}
-
-.featured-text-btn>.blue-btn{
-    background: var(--first-color);
-    color:var(--color-white);
-}
-
-.featured-text-btn>.blue-btn:hover{
-    background: var(--first-color-hover);
-    
 }
 
 .social_icons{
@@ -137,12 +102,7 @@ body{
     box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.7);
     cursor: pointer;
     text-decoration: none;
-}
-
-
-.icon a{
-    color: var(--color-white)
-    
+    color: var(--body-color);
 }
 
 .icon:hover{
@@ -212,44 +172,6 @@ h3{
 @media only screen and (max-width: 900px) {
 
 
-    /*botão de download de CV desaparece*/
-    .nav-button{
-        display: none;
-    }
-
-    /*botão de 3 barras aparece*/
-    .nav-menu.responsive{
-        left: 0;
-    }
-
-    .nav-menu{
-        position: fixed;
-        top: 80px;
-        left: -100%;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background: rgba(105, 15, 190, 0.7);
-        backdrop-filter: blur(20px);
-        width: 100%;
-        min-height: 450px;
-        height: 90vh;
-        transition: .3s;
-        
-    }
-
-
-    .nav_menu_list{
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .nav-menu-btn{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-
     .featured-box{
         flex-direction: column;
         justify-content: center;
@@ -280,20 +202,6 @@ h3{
         height: 150px;
     }
 
-    .row{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        gap: 50px;
-    }
-    .col{
-        display: flex;
-        justify-content: center;
-        width: 100%;
-    }
-    .about-info, .contact-info{
-        width: 100%;
-    }
     .project-container{
         justify-content: center;
 
@@ -309,18 +217,6 @@ h3{
 @media only screen and (max-width: 540px){
     .featured-name{
         font-size: 40px;
-    }
-
-    .project-box{
-        width: 100%;
-    }
-
-    .form-inputs{
-        flex-direction: column;
-    }
-
-    .input-field{
-        width: 100%;
     }
 
 }

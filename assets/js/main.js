@@ -31,10 +31,6 @@ function headerShadow(){
     }
 }   
 
-
-
-
-
 /*-------------  TYPING EFFECT --------------*/
 
 var typingEffect = new Typed(".typedText", {
@@ -106,25 +102,3 @@ if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
 })
 }
 window.addEventListener('scroll', scrollActive)
-
-
-// document.getElementById('form-info').addEventListener('submit', function(event) {
-//     event.preventDefault(); // Impede o envio padrão do formulário
-
-//     // Obtém os dados do formulário
-//     const formData = new FormData(this);
-//     console.log(formData);
-//     // Envia os dados do formulário
-//     axios.post(this.action, formData)
-//         .then(function(response) {
-//             // Limpa os campos apenas se a mensagem for enviada com sucesso
-//             document.getElementsByName('Nome')[0].value = '';
-//             document.getElementsByName('Email')[0].value = '';
-//             document.getElementsByName('Messagem')[0].value = '';
-
-//         })
-//         .catch(function(error) {
-//             // Trata os erros, se houver
-//             alert('Erro ao enviar formulário:', error);
-//         });
-// });
